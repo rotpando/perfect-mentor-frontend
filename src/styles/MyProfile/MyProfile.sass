@@ -1,0 +1,55 @@
+.profileContainer
+    display: flex
+    justify-content: center
+    align-items: center
+    min-width: 50%
+    height: 95%
+    width: 60%
+    background: #FFFFFF
+    border-radius: 50px
+    position: absolute 
+    left: 75%
+    top: 50%
+    transform: translate(-75%, -50%)
+
+.userDataContainer
+    display: flex
+    flex-direction: column
+    background: #FFFFFF
+    position: absolute
+    top: 10%
+    border-radius: 70px
+    box-shadow: 0px 4px 4px 0px #00000048
+    height: 85%
+    width: 50%
+    border: 0.1px solid #01000014
+    
+.avatar
+    position: fixed
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 7%
+
+.inputsContainer
+    display: flex
+    height: 100%
+    gap: 3%
+    flex-direction: column
+    align-items: center
+
+.textInput
+    width: 50%
+    font-weight: 900
+    
+@media screen and  (min-width: 800px)
+    .profileContainer
+        box-shadow: 0px 8px 8px 0px #00000048
+    
+@media screen and  (max-width: 800px)   
+    .userDataContainer
+        width: 100%
+        height: 100%
+        top: 0%
+        border-radius: 50px
+    .avatar
+        bottom: 0%
