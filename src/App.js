@@ -1,11 +1,13 @@
-import MyProfile from "./components/MyProfile";
-import './styles/main.css'
+import MyProfile from "./screens/MyProfile";
+import Landing from "./screens/Landing";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className='appContainer'>
-      <MyProfile />
-    </div>
+    <Routes>
+      <Route path="/" element={<Landing />} />
+      <Route path="/profile" element={<MyProfile />} />
+    </Routes>
   );
 }
 
