@@ -31,28 +31,6 @@
   color: #444444;
   font-size: 300%;
 }
-.landingButtonsContainer > .signUpButton {
-  transition: 0.2s;
-}
-.landingButtonsContainer > .logInButton {
-  transition: 0.2s;
-}
-
-.signUpButton:hover {
-  transform: scale(1.05);
-}
-
-.signUpButton:active {
-  transform: scale(0.9);
-}
-
-.logInButton:hover {
-  transform: scale(1.05);
-}
-
-.logInButton:active {
-  transform: scale(0.9);
-}
 
 @media screen and (max-width: 800px) {
   .landingRootContainer {
