@@ -9,14 +9,8 @@ function Landing() {
       <img className="sally" src={sally} alt="landingPagePicture"></img>
       <div className="landingButtonsContainer">
         <h1 className="landingTitle">THE PERFECT MENTOR</h1>
+        <Button title="Sign up" background="#444444" color="white" />
         <Button
-          className="signUpButton"
-          title="Sign up"
-          background="#444444"
-          color="white"
-        />
-        <Button
-          className="logInButton"
           title="Log in"
           style={{ border: "2px solid #444444", marginTop: "2%" }}
         />
