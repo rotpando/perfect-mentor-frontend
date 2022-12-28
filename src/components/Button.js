@@ -1,5 +1,6 @@
 import React from "react";
 import "./Components.css";
+import { HiOutlineUsers } from "react-icons/hi2";
 
 function Button({
   title,
@@ -7,16 +8,20 @@ function Button({
   fontSize,
   color,
   style,
-  onPress,
+  onClick,
   className,
+  flat,
+  icon,
+  id,
 }) {
   return (
     <div
       className={`${className} pmButton`}
+      id={id}
       style={{
         ...style,
         background: background,
-        borderRadius: "40px",
+        borderRadius: flat ? "0px" : "40px",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -26,10 +31,24 @@ function Button({
         paddingBottom: "2%",
         cursor: "pointer",
         userSelect: "none",
+        gap: "2%",
       }}
-      onPress={onPress}
+      onClick={onClick}
     >
-      <p style={{ fontSize: fontSize, color: color }}>{title}</p>
+      <p
+      id={id}
+        style={{
+          display: "flex",
+          gap: "5%",
+          fontSize: fontSize,
+          color: color,
+          width: "fit-content",
+          whiteSpace: "nowrap",
+        }}
+      >
+        {icon ? icon : <></>}
+        {title}
+      </p>
     </div>
   );
 }
