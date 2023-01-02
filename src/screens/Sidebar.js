@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Button from "../components/Button";
 import Title from "../components/Title";
 import "../styles/Sidebar/Sidebar.css";
@@ -8,7 +8,6 @@ import { IoStatsChartOutline, IoLogOutOutline } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 function Sidebar() {
-  const [active, setActive] = useState("");
   const navigate = useNavigate();
   const sideBarItems = ["Users", "Stadistics", "Reports", "Profile", "Log out"];
   const sideBarIcons = [

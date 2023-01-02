@@ -4,17 +4,26 @@ import { Route, Routes } from "react-router-dom";
 import Sidebar from "./screens/Sidebar";
 import { useLocation } from "react-router-dom";
 import SignUp from "./screens/SignUp";
+import { useState, useEffect } from "react";
 
 function App() {
   const { pathname } = useLocation();
+  const [bodyClassName, setBodyClassName] = useState("");
+  useEffect(() => {
+    if (pathname !== "/" && pathname !== "/signUp" && pathname !== "/logIn") {
+      setBodyClassName("bodyContainer");
+    } else setBodyClassName("");
+  }, [pathname]);
   return (
     <>
       {pathname !== "/" ? <Sidebar /> : <></>}
-      <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/signUp" element={<SignUp/>} />
-        <Route path="/Profile" element={<MyProfile />} />
-      </Routes>
+      <div className={bodyClassName}>
+        <Routes>
+          <Route path="/" element={<Landing />} />
+          <Route path="/signUp" element={<SignUp />} />
+          <Route path="/Profile" element={<MyProfile />} />
+        </Routes>
+      </div>
     </>
   );
 }
