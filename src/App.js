@@ -5,6 +5,7 @@ import Sidebar from "./screens/Sidebar";
 import { useLocation } from "react-router-dom";
 import SignUp from "./screens/SignUp";
 import { useState, useEffect } from "react";
+import Users from "./screens/Users";
 
 function App() {
   const { pathname } = useLocation();
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/Users" element={<Users />} />
           <Route path="/Profile" element={<MyProfile />} />
         </Routes>
       </div>

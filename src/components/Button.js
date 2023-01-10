@@ -1,6 +1,5 @@
 import React from "react";
 import "./Components.css";
-import { HiOutlineUsers } from "react-icons/hi2";
 
 function Button({
   title,
