@@ -1,0 +1,79 @@
+.usersRootContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.usersRootContainer > .userListTitle {
+  background: #F5F6F7;
+  color: #444444;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  padding: 5%;
+  margin: 0%;
+  font-size: 50px;
+  font-weight: 500;
+}
+.usersRootContainer > .userListContainer {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  height: 80%;
+  width: 95%;
+  align-self: center;
+  align-items: center;
+  position: relative;
+  top: -4%;
+  background: #FFFFFF;
+}
+.usersRootContainer > .userListContainer > .userList {
+  display: flex;
+  flex-direction: column;
+  gap: 1%;
+  width: 95%;
+  height: 80%;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+}
+.usersRootContainer > .userListContainer > .userList > .userListHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #F5F6F7;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.usersRootContainer > .userListContainer > .userList > .userListHeader > .userListHeaderTitle {
+  color: rgba(68, 68, 68, 0.5019607843);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.usersRootContainer > .userListContainer > .filtersContainer {
+  display: flex;
+  align-items: center;
+  width: 95%;
+}
+.usersRootContainer > .userListContainer > .filtersContainer > .filterButtonsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 30%;
+  border-radius: 40px;
+  min-width: 300px;
+}
+.usersRootContainer > .userListContainer > .filtersContainer > .filterButtonsContainer > .filterButton {
+  border: 1px solid rgba(68, 68, 68, 0.1490196078);
+  padding-top: 0% !important;
+  padding-bottom: 0% !important;
+  margin: 2%;
+}/*# sourceMappingURL=Users.css.map */

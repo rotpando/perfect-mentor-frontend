@@ -1,9 +1,10 @@
 import React from "react";
-
-function Input() {
+import "./Components.css";
+function Input({ icon, placeholder, onChange, className, style }) {
   return (
-    <div>
-      <input></input>
+    <div style={style} className={`inputContainer ${className}`}>
+      {icon ? icon : <></>}
+      <input placeholder={placeholder} onChange={onChange}></input>
     </div>
   );
 }
