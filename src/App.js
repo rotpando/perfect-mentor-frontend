@@ -6,6 +6,7 @@ import { useLocation } from "react-router-dom";
 import SignUp from "./screens/SignUp";
 import { useState, useEffect } from "react";
 import Users from "./screens/Users";
+import Stadistics from "./screens/Stadistics";
 
 function App() {
   const { pathname } = useLocation();
@@ -24,6 +25,7 @@ function App() {
           <Route path="/signUp" element={<SignUp />} />
           <Route path="/Users" element={<Users />} />
           <Route path="/Profile" element={<MyProfile />} />
+          <Route path="/Stadistics" element={<Stadistics />} />
         </Routes>
       </div>
     </>
