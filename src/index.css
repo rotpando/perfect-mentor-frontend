@@ -16,7 +16,7 @@ code {
 .bodyContainer {
   display: flex;
   justify-content: center;
-  align-items: center;
+
   min-width: 50%;
   height: 95%;
   width: 60%;
