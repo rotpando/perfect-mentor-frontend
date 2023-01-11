@@ -1,6 +1,6 @@
 .stadisticsRootContainer {
-  height: 100%;
   width: 100%;
+  position: relative;
 }
 .stadisticsRootContainer > .titleContainer {
   width: 100%;
@@ -17,7 +17,31 @@
   font-size: 300%;
 }
 .stadisticsRootContainer > .stadisticsInfoContainer {
+  padding: 2% 2% 0% 2%;
+  position: relative;
+  bottom: 5%;
   display: flex;
-  justify-content: space-evenly;
-  padding-top: 2%;
+  background: #FFFFFF;
+  flex-direction: column;
+  height: 80%;
+  border-radius: 45px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.stadisticsRootContainer > .stadisticsInfoContainer > .cardInfoContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.stadisticsRootContainer > .stadisticsInfoContainer > .graphContainer {
+  background: #F5F6F7;
+  height: 60%;
+  margin: 2% 0% 2% 0%;
+  width: 100%;
+  border-radius: 45px;
+}
+.stadisticsRootContainer > .stadisticsInfoContainer > .graphContainer > .graphContainerTitle {
+  margin: 0;
+  border-bottom: 1px dashed #444444;
+  padding-top: 1%;
+  padding-left: 2%;
 }/*# sourceMappingURL=Stadistics.css.map */

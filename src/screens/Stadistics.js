@@ -9,8 +9,14 @@ function Stadistics() {
         <h1 className="stadisticsTitle">Stadistics</h1>
       </div>
       <div className="stadisticsInfoContainer">
-        <InfoCard title="TOTAL OF USERS" />
-        <InfoCard title="TOTAL OF NEW USERS" />
+        <div className="cardInfoContainer">
+          <InfoCard title="TOTAL OF USERS" />
+          <InfoCard title="TOTAL OF NEW USERS" />
+        </div>
+
+        <div className="graphContainer">
+          <h1 className='graphContainerTitle'>SIGN UPS PER MONTH</h1>
+        </div>
       </div>
     </div>
   );
