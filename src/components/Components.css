@@ -53,6 +53,39 @@
   margin-left: 1%;
 }
 
+.infoCardContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 40%;
+  background: #F5F6F7;
+  padding: 2%;
+  box-shadow: 0px 3px 3px rgba(1, 1, 1, 0.2);
+}
+.infoCardContainer > .cardTitle {
+  margin: 0%;
+  width: 100%;
+  border-bottom: 1px dashed #444444;
+}
+.infoCardContainer > .cardItem {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.infoCardContainer > .cardItem > .cardItemTitle {
+  font-size: 18px;
+  color: #444444;
+  font-weight: 700;
+}
+.infoCardContainer > .cardItem > .cardItemValue {
+  font-size: 14px;
+  color: #444444;
+  font-weight: 400;
+}
+
 @media screen and (max-width: 800px) {
   .landingTitle {
     margin: 0%;
